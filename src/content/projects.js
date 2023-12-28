@@ -1,31 +1,40 @@
 //projects start
 const projects = [
   {
-    name: "Booking.com clone",
+    name: "Boni-Cars",
     description:
-      "A clone of booking.com which is built using Nextjs 14 and Oxylabs webscraping API to scrape data from the official booking.com website and show as results of our queries",
+      "A Car rental service which is built using Next.js, typescript and Tailwind css displaying different varieties and modelss of cars around the world",
     stack: ["React", "NodeJS", "Express", "MongoDB"],
-    sourceCode: "https://github.com/randilt/booking.com-clone-nextjs14",
-    img: "/bookingcom.jpg",
-    preview: "https://bookingcomnext14.netlify.app/",
+    sourceCode: "https://github.com/Boniife/boni-cars",
+    img: "/cars.png",
+    preview: "https://boni-cars.vercel.app/",
   },
   {
-    name: "Cyberscourge Hub",
+    name: "Boni-youtube Clone",
     description:
-      "An open source ultra fast markdown blog app built using Hugo and deployed on Netlify. The theme of this app is 100% custom built by me. The theme is also open source and can be found on my github profile. And I regularly write articles on this blog.",
+      "A clone of youtube.com which is built using React js and Rapid_Api to scrape data from different source around the world website and show as results of our queries",
     stack: ["React", "NodeJS", "Express", "MongoDB"],
-    sourceCode: "https://github.com/randilt/cyberscourge-hub",
-    img: "/cyberscourge.jpg",
-    preview: "https://rtharusha.tech",
+    sourceCode: "https://github.com/Boniife/boniyoutube",
+    img: "/youtube.png",
+    preview: "https://storied-centaur-8e6c60.netlify.app/",
   },
   {
-    name: "Jotion (Notion Clone)",
+    name: "Boni-fit",
     description:
-      "A clone of the popular note taking app Notion. This app is built using Nextjs 13 and Tailwind CSS. It uses clerk for authentication and convex for its real time database. The project is not yet complete ",
+      "A fitness Application. This app is built using React and Tailwind CSS. It uses Rapid-Api and youtube to source for different varieties of exercises for users benefit.",
+    stack: ["React", "Tailwind"],
+    sourceCode: "https://github.com/Boniife/boni-fitness",
+    img: "/fit.png",
+    preview: "https://clinquant-stardust-ee5c74.netlify.app/",
+  },
+  {
+    name: "Boni-Travels",
+    description:
+      "A Travel and camp location website. This app is built using Nextjs 13 and Tailwind CSS, Typescript.",
     stack: ["React", "NodeJS", "Express", "MongoDB"],
-    sourceCode: "https://github.com/randilt/notion-clone",
-    img: "/jotion.jpg",
-    preview: "#",
+    sourceCode: "https://github.com/Boniife/boni-travels",
+    img: "/travel.png",
+    preview: "https://boni-travels.vercel.app/",
   },
 ];
 

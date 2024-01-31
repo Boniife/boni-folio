@@ -3,7 +3,7 @@ const projects = [
   {
     name: "Xcursions",
     description:
-      "Find your dream holiday destinations, get great hotel deals, and save for your next travel, all in one space",
+      "Xcursion is a travel web application where users can book trips to luxurious locations manage their dashboards, get notifications when trips are near, etc. With Xcursion you have the ability to pay for trips in installments.",
     stack: ["React", "NodeJS", "Express", "MongoDB"],
     sourceCode: "https://staging.xcursions.ng",
     img: "/xcursion.png",
@@ -12,7 +12,7 @@ const projects = [
   {
     name: "Festival of Sound",
     description:
-      "For Music Creators, Music Enthusiasts and Artists.",
+      "Festival of Sounds is a platform that showcases the African musical culture, users can register to attend a music show, book a stand to exhibit their art etc. It was built using Next js for both frontend and backend, Mongodb for data storage, Sass for styling.",
     stack: ["Next js", "sass", "fullstack", "MongoDB"],
     sourceCode: "https://staging.festivalofsounds.com",
     img: "/festival.png",

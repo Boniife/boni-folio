@@ -53,7 +53,7 @@ function App() {
       <div className="hr"></div>
 
       <section id="projects">
-        <Heading firstWord="My" secondWord="Projects" />
+        <Heading firstWord="My " secondWord="work/personal-projects" />
         <motion.div
           className="project-map"
           ref={ref}

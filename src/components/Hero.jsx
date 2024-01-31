@@ -34,8 +34,7 @@ const Hero = (props) => {
             strings: [
               "An Aspiring Developer",
               "An AI & ML Enthusiast",
-              "An IoT Enthusiast",
-              "A Student",
+              "A Front-end Developer",
             ],
             autoStart: true,
             loop: true,

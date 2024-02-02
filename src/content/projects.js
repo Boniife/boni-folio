@@ -19,6 +19,14 @@ const projects = [
     preview: "https://staging.festivalofsounds.com",
   },
   {
+    name: "Snapgram",
+    description: 'Snapgram is not just another social media app, Snapgram connects people through pictures keeping memories alive, Stay engaged with a personalized content feed that adapts to your interests and preferences',
+    stack: ["Vite", "tailwind", "fullstack", "Appwrite"],
+    sourceCode: "https://github.com/Boniife/boni-gram",
+    img: "/snap.png",
+    preview: "https://boni-gram.vercel.app/",
+  },
+  {
     name: "Boni-youtube Clone",
     description:
       "A clone of youtube.com which is built using React js and Rapid_Api to scrape data from different source around the world website and show as results of our queries",

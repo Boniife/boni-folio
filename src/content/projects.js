@@ -1,5 +1,14 @@
+// import { preview } from 'vite';
+
 //projects start
 const projects = [
+  {
+    name: "City Of David RCCG Atalanta branch",
+    description: "City of David is a church (RCCG) website created for their Atalanta branch the website has an online payment where member can pay their tithe and offering",
+    sourceCode: "https://github.com/justiniyke29/Joint-work",
+    img: "/rccg.png",
+    preview: "https://cod-dev.vercel.app/",
+  },
   {
     name: "Xcursions",
     description:
@@ -35,15 +44,15 @@ const projects = [
     img: "/youtube.png",
     preview: "https://storied-centaur-8e6c60.netlify.app/",
   },
-  {
-    name: "Boni-Cars",
-    description:
-      "A Car rental service which is built using Next.js, typescript and Tailwind css displaying different varieties and modelss of cars around the world",
-    stack: ["React", "NodeJS", "Express", "MongoDB"],
-    sourceCode: "https://github.com/Boniife/boni-cars",
-    img: "/cars.png",
-    preview: "https://boni-cars.vercel.app/",
-  },
+  // {
+  //   name: "Boni-Cars",
+  //   description:
+  //     "A Car rental service which is built using Next.js, typescript and Tailwind css displaying different varieties and modelss of cars around the world",
+  //   stack: ["React", "NodeJS", "Express", "MongoDB"],
+  //   sourceCode: "https://github.com/Boniife/boni-cars",
+  //   img: "/cars.png",
+  //   preview: "https://boni-cars.vercel.app/",
+  // },
   {
     name: "Boni-fit",
     description:
@@ -53,15 +62,15 @@ const projects = [
     img: "/fit.png",
     preview: "https://clinquant-stardust-ee5c74.netlify.app/",
   },
-  {
-    name: "Boni-Travels",
-    description:
-      "A Travel and camp location website. This app is built using Nextjs 13 and Tailwind CSS, Typescript.",
-    stack: ["React", "NodeJS", "Express", "MongoDB"],
-    sourceCode: "https://github.com/Boniife/boni-travels",
-    img: "/travel.png",
-    preview: "https://boni-travels.vercel.app/",
-  },
+  // {
+  //   name: "Boni-Travels",
+  //   description:
+  //     "A Travel and camp location website. This app is built using Nextjs 13 and Tailwind CSS, Typescript.",
+  //   stack: ["React", "NodeJS", "Express", "MongoDB"],
+  //   sourceCode: "https://github.com/Boniife/boni-travels",
+  //   img: "/travel.png",
+  //   preview: "https://boni-travels.vercel.app/",
+  // },
 ];
 
 //projects end

@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <p>
-        &copy; 2023. Made with ❤️ by{" "}
+        &copy; {new Date().getFullYear()}. Made with ❤️ by{" "}
         <a href="https://github.com/Boniife">Ifeanyi</a>.
       </p>
     </footer>

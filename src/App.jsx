@@ -16,14 +16,19 @@ import ContactForm from "./components/ContactForm";
 import BlogPost from "./components/BlogPost";
 
 function App() {
-  const controls = useAnimation();
-  const [ref, inView] = useInView({ triggerOnce: true });
+  const projectControls = useAnimation();
+  const skillControls = useAnimation();
+  const [projectRef, projectInView] = useInView({ triggerOnce: true });
+  const [skillRef, skillInView] = useInView({ triggerOnce: true });
 
   useEffect(() => {
-    if (inView) {
-      controls.start("visible");
+    if (projectInView) {
+      projectControls.start("visible");
     }
-  }, [controls, inView]);
+    if (skillInView) {
+      skillControls.start("visible");
+    }
+  }, [projectControls, skillControls, projectInView, skillInView]);
 
   const containerVariants = {
     hidden: {},
@@ -53,34 +58,69 @@ function App() {
       <div className="hr"></div>
 
       <section id="projects">
-        <Heading firstWord="My " secondWord="work/personal-projects" />
-        <motion.div
-          className="project-map"
-          ref={ref}
-          initial="hidden"
-          animate={controls}
-          variants={containerVariants}
-        >
-          {projects.map((project, index) => (
-            <div key={index}>
-              <ProjectCard
-                name={project.name}
-                img={project.img}
-                description={project.description}
-                source={project.sourceCode}
-                preview={project.preview}
-              />
-            </div>
-          ))}
-        </motion.div>
+        <Heading firstWord="My " secondWord="Projects" />
+        <div className="project-description-text">
+          <p>
+            Frontend And FullStack Project.
+          </p>
+        </div>
+
+        <div className="project-subsection">
+          <h2> <span className="reddie">Professional</span> Projects</h2>
+          <motion.div
+            className="project-grid"
+            ref={projectRef}
+            initial="hidden"
+            animate={projectControls}
+            variants={containerVariants}
+          >
+            {projects
+              .filter((project) => project.category === "professional")
+              .map((project, index) => (
+                <ProjectCard
+                  key={index}
+                  name={project.name}
+                  img={project.img}
+                  description={project.description}
+                  source={project.sourceCode}
+                  preview={project.preview}
+                  stack={project.stack}
+                />
+              ))}
+          </motion.div>
+        </div>
+
+        <div className="project-subsection">
+          <h2>Personal <span className="reddie">Projects </span></h2>
+          <motion.div
+            className="project-grid"
+            initial="hidden"
+            animate={projectControls}
+            variants={containerVariants}
+          >
+            {projects
+              .filter((project) => project.category === "personal")
+              .map((project, index) => (
+                <ProjectCard
+                  key={index}
+                  name={project.name}
+                  img={project.img}
+                  description={project.description}
+                  source={project.sourceCode}
+                  preview={project.preview}
+                  stack={project.stack}
+                />
+              ))}
+          </motion.div>
+        </div>
       </section>
       <section id="skills">
         <Heading firstWord="Skills" secondWord="&Tools" />
         <motion.div
           className="skill-map"
-          ref={ref}
+          ref={skillRef}
           initial="hidden"
-          animate={controls}
+          animate={skillControls}
           variants={containerVariants}
         >
           {skills.map((skill, index) => (

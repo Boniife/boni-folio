@@ -18,26 +18,27 @@ const ProjectCard = (props) => {
       <div className="project-description">
         <p>{props.description}</p>
       </div>
+      {props.stack && props.stack.length > 0 && (
+        <div className="project-tags">
+          {props.stack.map((item, index) => (
+            <span key={index} className="project-tag">
+              {item}
+            </span>
+          ))}
+        </div>
+      )}
       <div className="project-links">
         {props.source && (
           <div>
-            <a href={props.source} className="github">
+            <a href={props.source} className="github" target="_blank" rel="noreferrer">
               <FaGithub />
             </a>
-            <a href={props.preview}>
+            <a href={props.preview} target="_blank" rel="noreferrer">
               <FaExternalLinkAlt />
             </a>
           </div>
         )}
       </div>
-
-      {/* <div className="project-tags">
-        <div className="project-tag">
-          {projects.stack.map((project, index) => (
-            <p key={index}>hello</p>
-          ))}
-        </div>
-      </div> */}
     </div>
   );
 };
@@ -45,7 +46,7 @@ const ProjectCard = (props) => {
 ProjectCard.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  tags: PropTypes.string.isRequired,
+  stack: PropTypes.arrayOf(PropTypes.string),
   img: PropTypes.string.isRequired,
   source: PropTypes.string.isRequired,
   preview: PropTypes.string.isRequired,

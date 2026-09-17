@@ -9,12 +9,6 @@ const socials = [
     icon: "linkedin.svg",
     url: "https://www.linkedin.com/in/ifeanyi-anyanwu-255476273",
   },
-  {
-    name: "Twitter",
-    icon: "twitter.png",
-    url: "https://twitter.com/boniife",
-  },
 ];
 
 export default socials;
-

@@ -27,6 +27,7 @@ Skill.propTypes = {
       name: PropTypes.string.isRequired,
       icon: PropTypes.string.isRequired,
       category: PropTypes.string,
+      categories: PropTypes.arrayOf(PropTypes.string),
       highlight: PropTypes.string,
     }),
   ]).isRequired,

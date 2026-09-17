@@ -48,9 +48,9 @@ const Hero = ({ img, description, stats }) => {
               <Typewriter
                 options={{
                   strings: [
+                    "Full-Stack Web Developer",
                     "Frontend Software Engineer",
                     "Next.js & React Specialist",
-                    "Full-Stack Web Developer",
                     "Redux & RTK Query Architect",
                   ],
                   autoStart: true,
@@ -71,7 +71,12 @@ const Hero = ({ img, description, stats }) => {
             <a href="#contact" className="btn-secondary">
               <FiMail /> Get In Touch
             </a>
-            <a href="#contact" className="btn-secondary">
+            <a
+              href="/Ifeanyi_Anyanwu_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="btn-secondary"
+            >
               <FiFileText /> View Resume
             </a>
           </div>
@@ -109,7 +114,7 @@ const Hero = ({ img, description, stats }) => {
               animate={floatingAnimation}
             >
               <img src="/skills/nextjs.svg" alt="Next.js" />
-              <span>Next.js 14+</span>
+              <span>Next.js</span>
             </motion.div>
 
             <motion.div

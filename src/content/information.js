@@ -13,10 +13,10 @@ const userData = {
   location: "Lagos, Nigeria (Open to Remote Worldwide)",
   email: "anyanwuifeanyi3@gmail.com",
   phone: "+234 810 508 0543",
-  resumeUrl: "#contact", // Can be replaced with actual PDF link or triggers contact
+  resumeUrl: "/Ifeanyi_Anyanwu_Resume.pdf",
   stats: [
-    { label: "Years Experience", value: "3+" },
-    { label: "Production & Client Apps", value: "10+" },
+    { label: "Years Experience", value: "4+" },
+    { label: "Production & Client Apps", value: "20+" },
     { label: "Core Tech Stack", value: "React / Next.js" },
     { label: "State Architecture", value: "Redux / RTK Query" },
   ],

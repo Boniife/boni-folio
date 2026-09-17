@@ -9,6 +9,9 @@ const SkillsSection = () => {
 
   const filteredSkills = skills.filter((skill) => {
     if (activeCategory === "all") return true;
+    if (Array.isArray(skill.categories)) {
+      return skill.categories.includes(activeCategory);
+    }
     return skill.category === activeCategory;
   });
 

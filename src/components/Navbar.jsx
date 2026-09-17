@@ -50,7 +50,12 @@ const Navbar = ({ firstName, lastName }) => {
         </nav>
 
         <div className="nav-actions">
-          <a href="#contact" className="btn-nav-outline">
+          <a
+            href="/Ifeanyi_Anyanwu_Resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="btn-nav-outline"
+          >
             <FiFileText /> Resume
           </a>
           <a href="#contact" className="btn-nav-primary">
@@ -75,7 +80,14 @@ const Navbar = ({ firstName, lastName }) => {
             <a href="#strengths" className="mobile-nav-link" onClick={closeMenu}>Why Me</a>
             <a href="#contact" className="mobile-nav-link" onClick={closeMenu}>Contact</a>
             <div style={{ display: "flex", gap: "10px", marginTop: "10px" }}>
-              <a href="#contact" className="btn-nav-outline" style={{ flex: 1, justifyContent: "center" }} onClick={closeMenu}>
+              <a
+                href="/Ifeanyi_Anyanwu_Resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="btn-nav-outline"
+                style={{ flex: 1, justifyContent: "center" }}
+                onClick={closeMenu}
+              >
                 <FiFileText /> Resume
               </a>
               <a href="#contact" className="btn-nav-primary" style={{ flex: 1, justifyContent: "center" }} onClick={closeMenu}>

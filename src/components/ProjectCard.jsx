@@ -1,55 +1,98 @@
 import PropTypes from "prop-types";
-import { FaGithub } from "react-icons/fa";
-import { FaExternalLinkAlt } from "react-icons/fa";
-// import { motion } from "framer-motion";
-const ProjectCard = (props) => {
-  // const containerVariants = {
-  //   hidden: { opacity: 0 },
-  //   visible: { opacity: 1, transition: { duration: 0.8 } },
-  // };
+import { FiExternalLink, FiGithub } from "react-icons/fi";
+import { motion } from "framer-motion";
+
+const ProjectCard = ({
+  name,
+  description,
+  badge,
+  featured,
+  highlights,
+  stack,
+  img,
+  source,
+  preview,
+}) => {
   return (
-    <div className="project-card">
-      <div className="project-img">
-        <img src={props.img} alt={props.name} />
+    <motion.div
+      className="project-card-modern"
+      layout
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.95 }}
+      transition={{ duration: 0.4 }}
+    >
+      {/* Thumbnail Box */}
+      <div className="project-thumb-box">
+        {badge && <span className="project-badge-pill">{badge}</span>}
+        {featured && <span className="project-badge-featured">Featured</span>}
+        <img src={img} alt={name} loading="lazy" />
       </div>
-      <div className="project-title">
-        <h2>{props.name}</h2>
-      </div>
-      <div className="project-description">
-        <p>{props.description}</p>
-      </div>
-      {props.stack && props.stack.length > 0 && (
-        <div className="project-tags">
-          {props.stack.map((item, index) => (
-            <span key={index} className="project-tag">
-              {item}
-            </span>
-          ))}
-        </div>
-      )}
-      <div className="project-links">
-        {props.source && (
-          <div>
-            <a href={props.source} className="github" target="_blank" rel="noreferrer">
-              <FaGithub />
-            </a>
-            <a href={props.preview} target="_blank" rel="noreferrer">
-              <FaExternalLinkAlt />
-            </a>
+
+      {/* Card Content Body */}
+      <div className="project-body">
+        <h3 className="project-title-modern">{name}</h3>
+        <p className="project-desc-modern">{description}</p>
+
+        {/* Highlights / Architecture bullet points */}
+        {highlights && highlights.length > 0 && (
+          <ul className="project-highlights-list">
+            {highlights.map((bullet, idx) => (
+              <li key={idx}>▹ {bullet}</li>
+            ))}
+          </ul>
+        )}
+
+        {/* Tech Stack Chips */}
+        {stack && stack.length > 0 && (
+          <div className="project-tags-wrap">
+            {stack.map((tech, idx) => (
+              <span key={idx} className="project-tag-chip">
+                {tech}
+              </span>
+            ))}
           </div>
         )}
+
+        {/* Action Buttons */}
+        <div className="project-actions-row">
+          {preview && (
+            <a
+              href={preview}
+              target="_blank"
+              rel="noreferrer"
+              className="btn-card-primary"
+            >
+              <FiExternalLink /> Live Demo
+            </a>
+          )}
+          {source && (
+            <a
+              href={source}
+              target="_blank"
+              rel="noreferrer"
+              className="btn-card-secondary"
+              title="View Repository"
+            >
+              <FiGithub /> Source Code
+            </a>
+          )}
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
 ProjectCard.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  badge: PropTypes.string,
+  featured: PropTypes.bool,
+  highlights: PropTypes.arrayOf(PropTypes.string),
   stack: PropTypes.arrayOf(PropTypes.string),
   img: PropTypes.string.isRequired,
-  source: PropTypes.string.isRequired,
-  preview: PropTypes.string.isRequired,
+  source: PropTypes.string,
+  preview: PropTypes.string,
 };
 
 export default ProjectCard;

@@ -8,7 +8,7 @@ const userData = {
   tagline: "Building high-performance, scalable web platforms with React, Next.js & Redux Toolkit.",
   img: ifeanyi,
   description:
-    "I'm a results-driven Software Engineer with a degree in Software Engineering from Imo State University. I specialize in architecting fast, accessible, and user-centric web applications. With proven production experience building enterprise-grade platforms—such as the FoodHutz ecosystem (reservations, takeaway ordering, vendor dashboards)—I bridge elegant UI design with robust backend APIs, complex state management, and SEO-optimized performance.",
+    "I'm a results-driven Software Engineer with 4+ years of experience building high-performance production web systems and holding a degree in Software Engineering from Imo State University. I specialize in architecting fast, accessible, and user-centric web applications. With proven production experience building enterprise-grade platforms—such as the FoodHutz ecosystem (reservations, takeaway ordering, vendor dashboards)—I bridge elegant UI design with robust backend APIs, complex state management, and SEO-optimized performance.",
   status: "Available for Full-Time & Contract Roles",
   location: "Lagos, Nigeria (Open to Remote Worldwide)",
   email: "anyanwuifeanyi3@gmail.com",
